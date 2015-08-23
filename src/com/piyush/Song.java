@@ -1,16 +1,16 @@
 package com.piyush;
 
-
+//This class is the model view
 public class Song {
 
     protected String mTitle;
     protected String mArtist;
     protected String mUrl;
 
-    public Song(String artist,String title,String url){
-        mTitle=title;
-        mArtist=artist;
-        mUrl=url;
+    public Song(String artist, String title, String url) {      //Song consructor having the following attributes
+        mTitle = title;
+        mArtist = artist;
+        mUrl = url;
     }
 
     public String getTitle() {
@@ -38,7 +38,7 @@ public class Song {
     }
 
     @Override
-    public String toString(){
-        return String.format("%s by %s", mTitle,mArtist);
-    }
+    public String toString() {
+        return String.format("%s by %s", mTitle, mArtist);
+    } //Override the toString method
 }
